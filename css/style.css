@@ -1,19 +1,14 @@
 @charset "UTF-8";
 
+a{
+  display: inline-block;
+  text-decoration: none;
+}
+
 .inner{
   width: 1100px;
   margin: auto;
   text-align: center;
-}
-
-.__btn{
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 0;
-  border: none;
-  outline: none;
-  background: transparent;
 }
 
 .clearfix::after{
@@ -22,7 +17,12 @@
   display: block;
 }
 
+img{
+  vertical-align: top;
+}
+
 /*header*/
+
 .contact__parents{
   background-color: #fff;
   padding: 15px 0;
@@ -32,7 +32,7 @@
   z-index: 1;
 }
 
-.fa-bolt{
+.bolt__icon{
   float: left;
   color: #4e4e4e;
   font-size: 45px;
@@ -56,6 +56,10 @@
 
 /*first-section*/
 
+.main__content{
+  padding-top: 75px;
+}
+
 .div__content{
   background-color: #f2f2f2;
   padding: 250px 0;
@@ -65,7 +69,7 @@
   color: #74cfae;
   font-size: 90px;
   font-weight: 700;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-family: 'Raleway';
 }
 
@@ -88,7 +92,9 @@
 
 .text{
   float: right;
+  width: 60%;
 }
+
 .sub-text{
   font-size: 24px;
   color: #fff;
@@ -102,6 +108,9 @@
   font-family: 'Lato';
   line-height: 25px;
 }
+.sub-text-content p{
+  word-wrap: normal;
+}
 
 /*article__content*/
 
@@ -112,6 +121,7 @@
 .sub-title{
   font-size: 24px;
   font-family: 'Raleway';
+  margin-bottom: 40px;
 }
 
 .figure-title{
@@ -122,28 +132,48 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 40px 0 10px 0;
 }
 
-.figure-content__img{
+.img__hover{
   opacity: .7;
   transition-duration: .3s;
   transition-property: all;
   cursor: pointer;
-  margin:0 0 80px 100px;
+}
+
+.figure-content__img{
+  margin-left:100px;
+  margin-bottom: 80px;
 }
 
 .figure-content__img:nth-child(3n+1){
   margin-left: 0;
 }
-.figure-content__img:hover{
+
+.figure-content__img:nth-last-child(-n+3){
+  margin-bottom: 0;
+}
+
+.img__hover{
+  opacity: .7;
+  transition-duration: .3s;
+  transition-property: all;
+  cursor: pointer;
+}
+
+.img__hover:hover{
   opacity: 1;
+}
+
+.mail-section{
+  margin-top: 90px;
 }
 
 .text-content__mail{
   font-size: 20px;
   display: inline-block;
   font-family: 'Lato';
+  width: 52%;
 }
 
 .send{
@@ -215,7 +245,6 @@
   font-size: 45px;
   transition-property: all;
   transition-duration: .3s;
-  text-decoration: none;
 }
 
 .icon:hover{
@@ -226,10 +255,10 @@
 
 .copy__parent{
   background-color: #74cfae;
+  padding: 20px 0 25px 0;
 }
 .copy{
   color:#fff;
-  padding: 20px 0 25px 0;
   text-align: right;
   font-family: 'Lato';
 }
