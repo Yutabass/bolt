@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
+body{
+  font-family: 'Lato';
+}
+
 a{
   display: inline-block;
   text-decoration: none;
 }
 
 .inner{
-  width: 1100px;
   margin: auto;
   text-align: center;
 }
@@ -47,7 +50,6 @@ img{
   transition-duration: .3s;
   transition-property: all;
   float: right;
-  font-family: 'Lato';
 }
 
 .contact:hover{
@@ -62,7 +64,6 @@ img{
 
 .div__content{
   background-color: #f2f2f2;
-  padding: 250px 0;
 }
 
 .main-theme{
@@ -83,16 +84,6 @@ img{
 
 .section__content__what-can-we-do{
   background-color: #74cfae;
-  padding-top: 50px;
-}
-
-.phone-img{
- float: left;
-}
-
-.text{
-  float: right;
-  width: 60%;
 }
 
 .sub-text{
@@ -105,7 +96,6 @@ img{
   font-size: 20px;
   color: #fff;
   margin-top: 35px;
-  font-family: 'Lato';
   line-height: 25px;
 }
 .sub-text-content p{
@@ -130,28 +120,6 @@ img{
 
 .figure-content__parents{
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.img__hover{
-  opacity: .7;
-  transition-duration: .3s;
-  transition-property: all;
-  cursor: pointer;
-}
-
-.figure-content__img{
-  margin-left:100px;
-  margin-bottom: 80px;
-}
-
-.figure-content__img:nth-child(3n+1){
-  margin-left: 0;
-}
-
-.figure-content__img:nth-last-child(-n+3){
-  margin-bottom: 0;
 }
 
 .img__hover{
@@ -165,19 +133,11 @@ img{
   opacity: 1;
 }
 
-.mail-section{
-  margin-top: 90px;
-}
-
 .text-content__mail{
   font-size: 20px;
-  display: inline-block;
-  font-family: 'Lato';
-  width: 52%;
 }
 
 .send{
-  margin-left: 90px;
   font-size: 12px;
   padding: 14px 20px;
   cursor: pointer;
@@ -185,9 +145,6 @@ img{
   background-color: #74cfae;
   transition-duration: .3s;
   transition-property: all;
-  display: inline-block;
-  vertical-align: top;
-  font-family: 'Lato';
 }
 
 .send:hover{
@@ -202,22 +159,12 @@ img{
 }
 
 .skill-title{
-  margin-bottom:70px;
   color: #fff; 
 }
 
 .content__sircle__parents{
   display: flex;
   justify-content: center;
-}
-
-.figure-content__circle{
-  margin-left: 180px;
-  font-family: 'Lato';
-}
-
-.figure-content__circle:first-child{
-  margin-left: 0;
 }
 
 .text-content__circle{
@@ -229,7 +176,6 @@ img{
 
 .nav__content{
   background-color: #f2f2f2;
-  padding: 200px 0;
 }
 
 .container__icon{
@@ -238,7 +184,6 @@ img{
 }
 
 .icon{
-  width: 185px;
   padding: 30px 0;
   cursor: pointer;
   color: #74cfae;
@@ -260,5 +205,289 @@ img{
 .copy{
   color:#fff;
   text-align: right;
-  font-family: 'Lato';
+}
+
+
+@media screen and (min-width: 1200px){
+ 
+  .menu{
+    display: none;
+  }
+  
+  .inner{
+    width: 1100px;
+  }
+  
+  /*first-section*/
+  
+  .div__content{
+    padding: 250px 0;
+  }
+
+  /*section__content__what-can-we-do*/
+  
+  .section__content__what-can-we-do{
+    padding-top: 50px;
+  }
+  
+  .phone-img{
+   float: left;
+  }
+  
+  .text{
+    float: right;
+    width: 60%;
+  }
+  
+  /*article__content*/
+  
+  .figure-content__parents{
+    flex-wrap: wrap;
+  }
+ 
+  .figure-content__img{
+    margin-left:100px;
+    margin-bottom: 80px;
+  }
+  
+  .figure-content__img:nth-child(3n+1){
+    margin-left: 0;
+  }
+  
+  .figure-content__img:nth-last-child(-n+3){
+    margin-bottom: 0;
+  }
+  
+  .mail-section{
+    margin-top: 90px;
+  }
+  
+  .text-content__mail{
+    display: inline-block;
+    width: 52%;
+  }
+  
+  .send{
+    margin-left: 90px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /*section__content__our-skills*/
+  
+  
+  .skill-title{
+    margin-bottom:70px;
+  }
+  
+  .figure-content__circle{
+    margin-left: 180px;
+  }
+  
+  .figure-content__circle:first-child{
+    margin-left: 0;
+  }
+  
+  .text-content__circle{
+    font-size: 16px;
+    color: #fff;
+    margin-top: 20px;
+  }
+  /*nav__content*/
+  
+  .nav__content{
+    padding: 200px 0;
+  }
+  
+  .icon{
+    width: 185px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  
+  .inner{
+    width: 97%;
+  }
+  
+  /*header*/
+  
+  .menu{
+    display: none;
+  }
+  
+  .div__content{
+    padding: 250px 0;
+  }
+  
+  /*section__content__what-can-we-do*/
+  
+  .section__content__what-can-we-do{
+    padding: 50px 0 25px 0;
+  }
+  
+  .text{
+    margin: 20px auto 0 auto;
+  }
+
+  /*article__content*/
+  
+  .figure-content__parents{
+    flex-direction: column;
+  }
+  
+  
+  .figure-content__img:nth-child(3){
+    margin-bottom: 80px;
+  }
+  
+  .mail-section{
+    margin-top: 80px;
+  }
+  
+  .text-content__mail{
+    margin: 0 auto 40px auto;
+  }
+  
+  /*section__content__our-skills*/
+  
+  .skill-title{
+    margin-bottom:40px; 
+  }
+  
+  .content__sircle__parents{
+    flex-direction: column;
+  }
+  
+  .figure-content__circle{
+    margin-bottom: 88px;
+  }
+
+    /*nav__content*/
+
+  .nav__content{
+    padding: 200px 0;
+  }
+  
+  .icon{
+    width: 185px;
+  }
+  
+}
+
+@media screen and (max-width: 767px){
+  
+  .inner{
+    width: 97%;
+  }
+  
+  /*header*/
+  
+  .menu{
+    position: relative;
+    padding: 10px;
+    border: solid 1px #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    width: 20px;
+    height:12px;
+  
+  }
+  
+  .bar{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    border-radius: 3px;
+    display: block;
+    background-color: #ddd;
+    pointer-events: none;
+    transform: translate(0, -50%);
+  }
+  
+  .bar:nth-of-type(1){
+    top: 10px;
+  }
+  
+  .bar:nth-of-type(2){
+    top: 16px;
+  }
+  
+  .bar:nth-of-type(3){
+    top: 22px;
+  }
+  
+  .contact{
+    display: none;
+    font-family: 'Lato';
+    text-align: left;
+  }
+  
+  /*first-section*/
+  
+ 
+  .div__content{
+    padding: 160px 0 130px 0;
+  }
+  
+  .main-theme{
+    font-size: 80px;
+ 
+  }
+  
+  
+  /*section__content__what-can-we-do*/
+  
+  .section__content__what-can-we-do{
+    padding: 50px 0 25px 0;
+  }
+  
+  .text{
+    margin: 20px auto 0 auto;
+  }
+  
+  /*article__content*/
+  
+  .figure-content__parents{
+    flex-direction: column;
+  }
+  
+  .figure-content__img:nth-child(3){
+    margin-bottom: 80px;
+  }
+  
+  .mail-section{
+    margin-top: 80px;
+  }
+  
+  .text-content__mail{
+    margin: 0 auto 40px auto;
+  }
+  
+  /*section__content__our-skills*/
+  
+  .skill-title{
+    margin-bottom:40px;
+  }
+  
+  .content__sircle__parents{
+    flex-direction: column;
+  }
+  
+  .figure-content__circle{
+    margin-bottom: 88px;
+  }
+  
+  /*nav__content*/
+  
+  .nav__content{
+    padding: 50px 15px;
+  }
+  
+  .container__icon{
+    flex-direction: column;
+  }
+ 
 }
