@@ -338,7 +338,7 @@ img{
   }
   
   
-  .figure-content__img:nth-child(3n+1){
+  .figure-content__img:nth-child(3n+4){
     margin-top: 80px;
   }
   
@@ -458,7 +458,7 @@ img{
     flex-direction: column;
   }
   
-  .figure-content__img:nth-child(3n+1){
+  .figure-content__img:nth-child(3n+4){
     margin-top: 80px;
   }
   
